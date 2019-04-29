@@ -1,0 +1,74 @@
+section{
+    width: 64vw;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+section header ul li{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+section h2{
+    font-weight: bold;
+    font-size: 24px;
+}
+.status{
+    background-color: #F15A24;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 6px 7px;
+}
+section li:nth-child(2):not(.star){
+    margin-top: 15px;
+}
+section li:nth-child(3):not(.star){
+    margin-top: 30px;
+}
+section li:nth-child(2) p{
+    color: #B5B5B5;
+}
+.stars{
+    display: flex;
+}
+.star{
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    margin: 0px 2px;
+}
+figure{
+    margin-top: 10px;
+}
+section img{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+figcaption{
+    max-height: 500px;
+    overflow-x: hidden;
+    position: relative;
+}
+figcaption div{
+    background: linear-gradient(0deg, white, transparent);
+    width: 100%;
+    position: absolute;
+    height: 150px;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    left: 0;
+}
+figcaption button{
+    border: none;
+    background: transparent;
+}
+.fa-angle-down{
+    font-size: 2rem;
+}
