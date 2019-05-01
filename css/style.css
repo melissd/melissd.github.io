@@ -103,7 +103,7 @@ main{
 
 .main__cards{
     width: 18rem;
-    height: 18rem;
+    height: 17rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     border-radius: 4px;
     display: flex;
@@ -187,27 +187,7 @@ h2{
 }
 
 @media  all and (max-width: 1024px){
-    header, footer{
-        padding: 1rem 4rem;
-        flex-direction: column;
-    }
-
-    header > ul{
-        flex-direction: column;
-    }
-
-    header > ul >li{
-        padding-left: 0;
-        padding-bottom: 1rem;
-    }
-
-    header> a > img{
-        width: 20vw;
-        height: 12vh;
-        margin-bottom: 1rem;
-    }
-
-    .none{
+  .none{
         display: none;
     }
 
@@ -226,5 +206,27 @@ h2{
 
     .cards{
         padding: 2rem 0;
+    }
+}
+
+@media  all and (max-width: 798px){
+    header, footer{
+        padding: 1rem 4rem;
+        flex-direction: column;
+    }
+
+    header > ul{
+        flex-direction: column;
+    }
+
+    header > ul >li{
+        padding-left: 0;
+        padding-bottom: 1rem;
+    }
+
+    header> a > img{
+        width: 20vw;
+        height: 12vh;
+        margin-bottom: 1rem;
     }
 }

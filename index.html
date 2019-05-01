@@ -1,205 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/fontawesome-all.css">
-    <link rel="stylesheet" href="../css/personalArenaScreen.css">
-    <link rel="stylesheet" href="../css/styleStars.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>User Name</title>
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet">
+   
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.css">
+	<link rel="stylesheet" type="text/css" href="css/styleStars.css">
 </head>
 <body>
     <header>
-        <a href="../index.html">
-            <img src="../img/QuestAreaLogo.png" alt="logo">
+        <a href="index.html">
+            <img src="img/QuestAreaLogo.png" alt="logo">
         </a>
-            <ul>
-                <li><a href="teamScreen.html">О команде</a></li>
-                <li><a href="listScreen.html">Квесты</a></li>
-                <li>
-                    <a href="personalArenaScreen.html">
-                        <div></div>
-                        <p>NameUser</p>
-                    </a></li>
-            </ul>
+        <ul>
+            <li><a href="html/teamScreen.html">О команде</a></li>
+            <li><a href="html/listScreen.html">Квесты</a></li>
+            <li><a href="">Войти</a></li>
+        </ul>
     </header>
-    <main>
-        <section class="info-user">
-            <div class="info-user_left">
-                <img src="../img/Sadovaya.png" alt="avatar">
-            </div>
-            <div class="info-user_right">
-                <div class="info-user_right__data">
-                    <div class="info-user_right__data__name">
-                        <h2>Имя пользователя</h2>
-                        <i class="fas fa-pencil-alt"></i>
-                    </div>
-                    <p>Дата рождения: 00.00.0000</p>
-                    <p>Город проживания: Город</p>
-                </div>
 
-                <div class="info-user_right__awards">
-                    <h3>Полученные награды:</h3>
-                    <ul class="awards">
+    <main>
+        <section class="first">
+            <h1>Quest Arena</h1>
+        </section>
+        <section>
+            <h2>Что такое Quest Arena?</h2>
+            <p>
+                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
+                    Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. 
+                    В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, 
+                    используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, 
+                    но и перешагнул в 
+            </p>
+            <p class="none">электронный дизайн.
+                Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, 
+                в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+            </p>
+        </section>
+
+        <section class="advantages">
+            <div class="advantages__first">
+                <img src="img/setting.png" alt="one">
+                <h3>Как это работает?</h3>
+                <ol>
+                    <li>Скачиваете приложение</li>
+                    <li>Выбираете экскурсию или квест</li>
+                    <li>Гуляете по Ростову</li>
+                    <li>Приложение понимает где вы
+                        и показывает куда вам идти</li>
+                </ol>
+            </div>
+            
+            <div class="advantages__second">
+                <img src="img/like.png" alt="one">
+                <h3>Что вы получаете?</h3>
+                <ol>
+                    <li>Вы узнаете интересные истории 
+о людях и домах вокруг вас</li>
+                    <li>Вы хорошо проведёте время 
+и увидите  другой Ростов</li>
+                    <li> Он совсем не такой, каким 
+вы его видите каждый день</li>
+                </ol>
+            </div>
+            <div class="advantages__third">
+                <img src="img/star.png" alt="one">
+                <h3>Хотите больше?</h3>
+                <span>Вы можете создавать свои собственные и 
+                        неповторимые квесты</span>
+            </div>
+        </section>
+
+        <section class="cards">
+            <h2>Популярные квесты сезона</h2>
+            <div class="container-cards">
+
+                <div class="main__cards">
+                    <img src="img/Sadovaya.png" alt="Sadovaya">
+                    <ul>
                         <li>
-                            <div></div>
+                            <h3>Простой квест по центру Ростова </h3>
+                            <span class="gray">Петр Иванов</span>
+        
                         </li>
                         <li>
-                            <div></div>
-                        </li>
-                        <li>
-                            <div></div>
-                        </li>
-                        <li>
-                            <div></div>
-                        </li>
-                        <li>
-                            <div></div>
-                        </li>
-                        <li>
-                            <i class="fas fa-angle-right"></i>
+        
+                            <div class="review_stars_wrap">
+                                    <div id="review_stars">
+                                        <input id="star-4" type="radio" name="stars"/>
+                                        <label title="Отлично" for="star-4">
+                                            <i class="fas fa-star"></i>
+                                        </label>
+                                        <input id="star-3" type="radio" name="stars"/>
+                                        <label title="Хорошо" for="star-3">
+                                            <i class="fas fa-star"></i>
+                                        </label>
+                                        <input id="star-2" type="radio" name="stars" checked="checked" />
+                                        <label title="Нормально" for="star-2">
+                                            <i class="fas fa-star"></i>
+                                        </label>
+                                        <input id="star-1" type="radio" name="stars"/>
+                                        <label title="Плохо" for="star-1">
+                                            <i class="fas fa-star"></i>
+                                        </label>
+                                        <input id="star-0" type="radio" name="stars"/>
+                                        <label title="Ужасно" for="star-0">
+                                            <i class="fas fa-star"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            <ul>
+                                <li>Количество этапов: 3 этапа</li>
+                                <li class="gray">00.00.0000</li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
-            </div>
-
-        </section>
-        <section class="block">
-            <div class="header">
-                <h3>Мои квесты</h3>
-                <p>Добавить +</p>
-            </div>
-            <div class="container-cards">
-                
-                    <div class="main__cards">
-                        <img src="../img/Sadovaya.png" alt="Sadovaya">
-                        <ul>
-                            <li>
-                                <a href="informationScreen.html">
-                                    <h3>Простой квест по центру Ростова </h3>
-                                </a>
-                                <span class="gray">Петр Иванов</span>
-            
-                            </li>
-                            <li>
-            
-                                <div class="review_stars_wrap">
-                                        <div id="review_stars">
-                                            <input id="star-4" type="radio" name="stars"/>
-                                            <label title="Отлично" for="star-4">
-                                                <i class="fas fa-star"></i>
-                                            </label>
-                                            <input id="star-3" type="radio" name="stars"/>
-                                            <label title="Хорошо" for="star-3">
-                                                <i class="fas fa-star"></i>
-                                            </label>
-                                            <input id="star-2" type="radio" name="stars" checked="checked" />
-                                            <label title="Нормально" for="star-2">
-                                                <i class="fas fa-star"></i>
-                                            </label>
-                                            <input id="star-1" type="radio" name="stars"/>
-                                            <label title="Плохо" for="star-1">
-                                                <i class="fas fa-star"></i>
-                                            </label>
-                                            <input id="star-0" type="radio" name="stars"/>
-                                            <label title="Ужасно" for="star-0">
-                                                <i class="fas fa-star"></i>
-                                            </label>
-                                        </div>
-                                    </div>
-                                <ul>
-                                    <li>Количество этапов: 3 этапа</li>
-                                    <li class="gray">00.00.0000</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="main__cards">
-                            <img src="../img/Sadovaya.png" alt="Sadovaya">
-                            <ul>
-                                <li>
-                                    <h3>Простой квест по центру Ростова </h3>
-                                    <span class="gray">Петр Иванов</span>
-                
-                                </li>
-                                <li>
-                
-                                    <div class="review_stars_wrap">
-                                            <div id="review_stars">
-                                                <input id="star-4" type="radio" name="stars"/>
-                                                <label title="Отлично" for="star-4">
-                                                    <i class="fas fa-star"></i>
-                                                </label>
-                                                <input id="star-3" type="radio" name="stars"/>
-                                                <label title="Хорошо" for="star-3">
-                                                    <i class="fas fa-star"></i>
-                                                </label>
-                                                <input id="star-2" type="radio" name="stars" checked="checked" />
-                                                <label title="Нормально" for="star-2">
-                                                    <i class="fas fa-star"></i>
-                                                </label>
-                                                <input id="star-1" type="radio" name="stars"/>
-                                                <label title="Плохо" for="star-1">
-                                                    <i class="fas fa-star"></i>
-                                                </label>
-                                                <input id="star-0" type="radio" name="stars"/>
-                                                <label title="Ужасно" for="star-0">
-                                                    <i class="fas fa-star"></i>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    <ul>
-                                        <li>Количество этапов: 3 этапа</li>
-                                        <li class="gray">00.00.0000</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="main__cards">
-                                <img src="../img/Sadovaya.png" alt="Sadovaya">
-                                <ul>
-                                    <li>
-                                        <h3>Простой квест по центру Ростова </h3>
-                                        <span class="gray">Петр Иванов</span>
-                    
-                                    </li>
-                                    <li>
-                    
-                                        <div class="review_stars_wrap">
-                                                <div id="review_stars">
-                                                    <input id="star-4" type="radio" name="stars"/>
-                                                    <label title="Отлично" for="star-4">
-                                                        <i class="fas fa-star"></i>
-                                                    </label>
-                                                    <input id="star-3" type="radio" name="stars"/>
-                                                    <label title="Хорошо" for="star-3">
-                                                        <i class="fas fa-star"></i>
-                                                    </label>
-                                                    <input id="star-2" type="radio" name="stars" checked="checked" />
-                                                    <label title="Нормально" for="star-2">
-                                                        <i class="fas fa-star"></i>
-                                                    </label>
-                                                    <input id="star-1" type="radio" name="stars"/>
-                                                    <label title="Плохо" for="star-1">
-                                                        <i class="fas fa-star"></i>
-                                                    </label>
-                                                    <input id="star-0" type="radio" name="stars"/>
-                                                    <label title="Ужасно" for="star-0">
-                                                        <i class="fas fa-star"></i>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        <ul>
-                                            <li>Количество этапов: 3 этапа</li>
-                                            <li class="gray">00.00.0000</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="main__cards">
-                        <img src="../img/Sadovaya.png" alt="Sadovaya">
+                <div class="main__cards">
+                        <img src="img/Sadovaya.png" alt="Sadovaya">
                         <ul>
                             <li>
                                 <h3>Простой квест по центру Ростова </h3>
@@ -240,7 +161,7 @@
                         </ul>
                     </div>
                     <div class="main__cards">
-                            <img src="../img/Sadovaya.png" alt="Sadovaya">
+                            <img src="img/Sadovaya.png" alt="Sadovaya">
                             <ul>
                                 <li>
                                     <h3>Простой квест по центру Ростова </h3>
@@ -281,60 +202,132 @@
                             </ul>
                         </div>
                         <div class="main__cards">
-                                <img src="../img/Sadovaya.png" alt="Sadovaya">
-                                <ul>
-                                    <li>
-                                        <h3>Простой квест по центру Ростова </h3>
-                                        <span class="gray">Петр Иванов</span>
-                    
-                                    </li>
-                                    <li>
-                    
-                                        <div class="review_stars_wrap">
-                                                <div id="review_stars">
-                                                    <input id="star-4" type="radio" name="stars"/>
-                                                    <label title="Отлично" for="star-4">
-                                                        <i class="fas fa-star"></i>
-                                                    </label>
-                                                    <input id="star-3" type="radio" name="stars"/>
-                                                    <label title="Хорошо" for="star-3">
-                                                        <i class="fas fa-star"></i>
-                                                    </label>
-                                                    <input id="star-2" type="radio" name="stars" checked="checked" />
-                                                    <label title="Нормально" for="star-2">
-                                                        <i class="fas fa-star"></i>
-                                                    </label>
-                                                    <input id="star-1" type="radio" name="stars"/>
-                                                    <label title="Плохо" for="star-1">
-                                                        <i class="fas fa-star"></i>
-                                                    </label>
-                                                    <input id="star-0" type="radio" name="stars"/>
-                                                    <label title="Ужасно" for="star-0">
-                                                        <i class="fas fa-star"></i>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        <ul>
-                                            <li>Количество этапов: 3 этапа</li>
-                                            <li class="gray">00.00.0000</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                </div>
-            <div class="listNumber">
+                    <img src="img/Sadovaya.png" alt="Sadovaya">
                     <ul>
-                        <li><a href="#"><</a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">></a></li>
+                        <li>
+                            <h3>Простой квест по центру Ростова </h3>
+                            <span class="gray">Петр Иванов</span>
+        
+                        </li>
+                        <li>
+        
+                            <div class="review_stars_wrap">
+                                    <div id="review_stars">
+                                        <input id="star-4" type="radio" name="stars"/>
+                                        <label title="Отлично" for="star-4">
+                                            <i class="fas fa-star"></i>
+                                        </label>
+                                        <input id="star-3" type="radio" name="stars"/>
+                                        <label title="Хорошо" for="star-3">
+                                            <i class="fas fa-star"></i>
+                                        </label>
+                                        <input id="star-2" type="radio" name="stars" checked="checked" />
+                                        <label title="Нормально" for="star-2">
+                                            <i class="fas fa-star"></i>
+                                        </label>
+                                        <input id="star-1" type="radio" name="stars"/>
+                                        <label title="Плохо" for="star-1">
+                                            <i class="fas fa-star"></i>
+                                        </label>
+                                        <input id="star-0" type="radio" name="stars"/>
+                                        <label title="Ужасно" for="star-0">
+                                            <i class="fas fa-star"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            <ul>
+                                <li>Количество этапов: 3 этапа</li>
+                                <li class="gray">00.00.0000</li>
+                            </ul>
+                        </li>
                     </ul>
+                </div>
+                <div class="main__cards">
+                        <img src="img/Sadovaya.png" alt="Sadovaya">
+                        <ul>
+                            <li>
+                                <h3>Простой квест по центру Ростова </h3>
+                                <span class="gray">Петр Иванов</span>
+            
+                            </li>
+                            <li>
+            
+                                <div class="review_stars_wrap">
+                                        <div id="review_stars">
+                                            <input id="star-4" type="radio" name="stars"/>
+                                            <label title="Отлично" for="star-4">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                            <input id="star-3" type="radio" name="stars"/>
+                                            <label title="Хорошо" for="star-3">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                            <input id="star-2" type="radio" name="stars" checked="checked" />
+                                            <label title="Нормально" for="star-2">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                            <input id="star-1" type="radio" name="stars"/>
+                                            <label title="Плохо" for="star-1">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                            <input id="star-0" type="radio" name="stars"/>
+                                            <label title="Ужасно" for="star-0">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                        </div>
+                                    </div>
+                                <ul>
+                                    <li>Количество этапов: 3 этапа</li>
+                                    <li class="gray">00.00.0000</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="main__cards">
+                            <img src="img/Sadovaya.png" alt="Sadovaya">
+                            <ul>
+                                <li>
+                                    <h3>Простой квест по центру Ростова </h3>
+                                    <span class="gray">Петр Иванов</span>
+                
+                                </li>
+                                <li>
+                
+                                    <div class="review_stars_wrap">
+                                            <div id="review_stars">
+                                                <input id="star-4" type="radio" name="stars"/>
+                                                <label title="Отлично" for="star-4">
+                                                    <i class="fas fa-star"></i>
+                                                </label>
+                                                <input id="star-3" type="radio" name="stars"/>
+                                                <label title="Хорошо" for="star-3">
+                                                    <i class="fas fa-star"></i>
+                                                </label>
+                                                <input id="star-2" type="radio" name="stars" checked="checked" />
+                                                <label title="Нормально" for="star-2">
+                                                    <i class="fas fa-star"></i>
+                                                </label>
+                                                <input id="star-1" type="radio" name="stars"/>
+                                                <label title="Плохо" for="star-1">
+                                                    <i class="fas fa-star"></i>
+                                                </label>
+                                                <input id="star-0" type="radio" name="stars"/>
+                                                <label title="Ужасно" for="star-0">
+                                                    <i class="fas fa-star"></i>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    <ul>
+                                        <li>Количество этапов: 3 этапа</li>
+                                        <li class="gray">00.00.0000</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
             </div>
         </section>
     </main>
+    
     <footer>
         <ul>
             <li>
@@ -349,15 +342,16 @@
                         <ul class="footer__social-container">
                             <li>@inst </li>
                             <li>
-                                <img src="image/instIco.png" alt="inst">
+                                <img src="img/instIco.png" alt="inst">
                             </li>
                         </ul>
                     </li>
                     <li>
                         <ul class="footer__social-container">
-                            <li>@telegram </li>
+                            
+                            <li>@telegramm </li>
                             <li>
-                                <img src="image/telegIco.png" alt="inst">
+                                <img src="img/telegIco.png" alt="inst">
                             </li>
                         </ul>
                     </li>
