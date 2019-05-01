@@ -1,19 +1,14 @@
-section{
-    width: 64vw;
-    max-width: 1000px;
-    margin: auto;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-}
-section header ul li{
+.header__quest-name, .header__author, .header__stages{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    margin-bottom: 1rem;
 }
-section h2{
+
+h2{
     font-weight: bold;
     font-size: 24px;
 }
+
 .status{
     background-color: #F15A24;
     color: white;
@@ -22,24 +17,12 @@ section h2{
     font-size: 14px;
     line-height: 14px;
     padding: 6px 7px;
-}
-section li:nth-child(2):not(.star){
-    margin-top: 15px;
-}
-section li:nth-child(3):not(.star){
-    margin-top: 30px;
-}
-section li:nth-child(2) p{
-    color: #B5B5B5;
-}
-.stars{
-    display: flex;
-}
-.star{
-    width: 20px;
+    width: 50px;
     height: 20px;
-    background-color: yellow;
-    margin: 0px 2px;
+}
+
+.header__author> p{
+    color: #B5B5B5;
 }
 figure{
     margin-top: 10px;
