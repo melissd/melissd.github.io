@@ -103,7 +103,7 @@ main{
 
 .main__cards{
     width: 18rem;
-    height: 17rem;
+    height: 18rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     border-radius: 4px;
     display: flex;
